@@ -1,6 +1,6 @@
 export default function validateArgs(...args) {
 	if (args.length === 0 ) {
-		return args;
+		throw new TypeError("At least one parameter is required");
 	}
 
 	if (args.length >= 1) {

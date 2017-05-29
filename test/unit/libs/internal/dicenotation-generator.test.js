@@ -9,3 +9,5 @@ macro.title = (title, input, expect) => `"it should parse ${JSON.stringify(input
 
 test(macro, [3, 7, "-2"], "3d7-2");
 test(macro, [1, 2, "+4"], "1d2+4");
+test(macro, [3, 5], "3d5");
+

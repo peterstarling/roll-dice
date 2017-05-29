@@ -1,4 +1,5 @@
 export default function rollComplex(rollSimple, dicenotationParser, ...args) {
+
 	if (args.length === 0) {
 		return rollSimple();
 	}

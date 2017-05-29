@@ -1,9 +1,11 @@
 import test from 'ava';
 import validateArgs from 'libs/internal/validate-args';
 
-test('it should not throw exception if no parameters are given', t => {
+test('it should throw exception if no parameters are given', t => {
 
-	t.deepEqual(validateArgs(), []);
+	const error = t.throws(validateArgs, TypeError);
+
+	t.is(error.message, "At least one parameter is required");
 })
 
 test('it should not throw exception if one parameter is given and its a string', t => {
