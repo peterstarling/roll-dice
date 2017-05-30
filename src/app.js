@@ -1,3 +1,5 @@
-import {roll, createRoll} from 'libs/';
+import {roll, createRoller} from 'libs/';
 
-console.log(roll(2, 6, "-4"));
+const roller = createRoller(2, 6, "-4");
+
+console.log(roller(), roller.toDiceNotation());
