@@ -6,7 +6,7 @@ Role Playing Game Dice Rolling
 1. Pull
 2. Import `roll` or `createRoller` from `libs/` like so:
 
-```import {roll, createRoll} from 'libs/';```
+```import {roll, createRoller} from 'libs/';```
 
 3. Enjoy.
 
