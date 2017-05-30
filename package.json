@@ -4,7 +4,8 @@
   "description": "Role Playing Game Dice Rolling",
   "main": "src/index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "start": "babel-node src/app.js"
   },
   "keywords": [
     "roll",
@@ -29,7 +30,7 @@
   "ava": {
     "require": [
       "babel-register"
-    ],
+    ],  
     "babel": "inherit",
     "files": [
       "test/**/*.test.js"
